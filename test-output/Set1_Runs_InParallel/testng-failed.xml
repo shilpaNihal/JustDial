@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" name="Failed suite [Set1_Runs_InParallel]" guice-stage="DEVELOPMENT">
+  <test thread-count="6" name="Test(failed)">
+    <classes>
+      <class name="testmethods.LoginModuleTest">
+        <methods>
+          <include name="loginDropdownValidTest"/>
+          <include name="closeBrowser"/>
+          <include name="intialSetup"/>
+        </methods>
+      </class> <!-- testmethods.LoginModuleTest -->
+      <class name="testmethods.HomePageModuleTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="intialSetup"/>
+        </methods>
+      </class> <!-- testmethods.HomePageModuleTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Set1_Runs_InParallel] -->
