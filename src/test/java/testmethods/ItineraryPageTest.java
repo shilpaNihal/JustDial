@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import initializer.PageInitializer;
 
+
 public class ItineraryPageTest extends PageInitializer{
 	
 	@Test(groups = { "Itinerary Page test", "assignment", })
@@ -38,7 +39,8 @@ public class ItineraryPageTest extends PageInitializer{
 		.addContactDetails()
 		.clickContinueOnContactPage()
 		.addTravellerDetails()
-		.clickContinueToPaymentPage();
+		.clickContinueToPaymentPage()
+		.verifyPaymentPageTitle("Pay securely");
 		
 		
 	}

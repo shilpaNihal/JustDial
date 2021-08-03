@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-03T09:54:37Z" name="set1" finished-at="2021-08-03T09:56:34Z" duration-ms="116449">
+  <suite started-at="2021-08-03T12:09:07Z" name="set1" finished-at="2021-08-03T12:10:36Z" duration-ms="88992">
     <groups>
       <group name="Itinerary Page test">
         <method signature="ItineraryPageTest.enterItineraryPageDetails()[pri:0, instance:testmethods.ItineraryPageTest@3e5499cc]" name="enterItineraryPageDetails" class="testmethods.ItineraryPageTest"/>
@@ -15,31 +15,31 @@
         <method signature="HomePageTest.searchFlightDetails()[pri:0, instance:testmethods.HomePageTest@45efc20d]" name="searchFlightDetails" class="testmethods.HomePageTest"/>
       </group> <!-- Home Page test -->
     </groups>
-    <test started-at="2021-08-03T09:54:37Z" name="Test" finished-at="2021-08-03T09:56:34Z" duration-ms="116449">
+    <test started-at="2021-08-03T12:09:07Z" name="Test" finished-at="2021-08-03T12:10:36Z" duration-ms="88992">
       <class name="testmethods.ItineraryPageTest">
-        <test-method is-config="true" signature="intialSetup()[pri:0, instance:testmethods.ItineraryPageTest@3e5499cc]" started-at="2021-08-03T09:55:49Z" name="intialSetup" finished-at="2021-08-03T09:56:06Z" duration-ms="17105" status="PASS">
+        <test-method is-config="true" signature="intialSetup()[pri:0, instance:testmethods.ItineraryPageTest@3e5499cc]" started-at="2021-08-03T12:09:49Z" name="intialSetup" finished-at="2021-08-03T12:09:59Z" duration-ms="9335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialSetup -->
-        <test-method signature="enterItineraryPageDetails()[pri:0, instance:testmethods.ItineraryPageTest@3e5499cc]" started-at="2021-08-03T09:56:06Z" name="enterItineraryPageDetails" finished-at="2021-08-03T09:56:34Z" duration-ms="27908" status="PASS">
+        <test-method signature="enterItineraryPageDetails()[pri:0, instance:testmethods.ItineraryPageTest@3e5499cc]" started-at="2021-08-03T12:09:59Z" name="enterItineraryPageDetails" finished-at="2021-08-03T12:10:36Z" duration-ms="37409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterItineraryPageDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testmethods.ItineraryPageTest@3e5499cc]" started-at="2021-08-03T09:56:34Z" name="closeBrowser" finished-at="2021-08-03T09:56:34Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testmethods.ItineraryPageTest@3e5499cc]" started-at="2021-08-03T12:10:36Z" name="closeBrowser" finished-at="2021-08-03T12:10:36Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testmethods.ItineraryPageTest -->
       <class name="testmethods.HomePageTest">
-        <test-method is-config="true" signature="intialSetup()[pri:0, instance:testmethods.HomePageTest@45efc20d]" started-at="2021-08-03T09:54:37Z" name="intialSetup" finished-at="2021-08-03T09:55:19Z" duration-ms="41808" status="PASS">
+        <test-method is-config="true" signature="intialSetup()[pri:0, instance:testmethods.HomePageTest@45efc20d]" started-at="2021-08-03T12:09:07Z" name="intialSetup" finished-at="2021-08-03T12:09:20Z" duration-ms="12565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialSetup -->
-        <test-method signature="searchFlightDetails()[pri:0, instance:testmethods.HomePageTest@45efc20d]" started-at="2021-08-03T09:55:19Z" name="searchFlightDetails" finished-at="2021-08-03T09:55:49Z" duration-ms="29476" status="PASS">
+        <test-method signature="searchFlightDetails()[pri:0, instance:testmethods.HomePageTest@45efc20d]" started-at="2021-08-03T12:09:20Z" name="searchFlightDetails" finished-at="2021-08-03T12:09:49Z" duration-ms="29592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchFlightDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testmethods.HomePageTest@45efc20d]" started-at="2021-08-03T09:55:49Z" name="closeBrowser" finished-at="2021-08-03T09:55:49Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testmethods.HomePageTest@45efc20d]" started-at="2021-08-03T12:09:49Z" name="closeBrowser" finished-at="2021-08-03T12:09:49Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

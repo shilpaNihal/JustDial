@@ -115,6 +115,10 @@ public class ItineraryPageObjects extends PageInitializer {
 	@FindBy(xpath = "//button[text()='Continue to payment']")
 	private WebElement continueToPaymentLocator;
 	
+	@FindBy(xpath = "//h1[text()='Pay to complete your booking']")
+	private WebElement paymentPageHeaderLocator;
+	
+	
 	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	
 	public ItineraryPageObjects verifySearchTextInPLP(String[] searchText) throws InterruptedException {
@@ -226,9 +230,9 @@ public class ItineraryPageObjects extends PageInitializer {
 	public ItineraryPageObjects addContactDetails()   {
 		waiting.waitForVisibilityOfElement(enterMobileNumberLocator, 6);
 		enterMobileNumberLocator.clear();
-		enterMobileNumberLocator.sendKeys("6361586393");
+		enterMobileNumberLocator.sendKeys("5465896523");
 		enterEmailAddressLocator.clear();
-		enterEmailAddressLocator.sendKeys("shilpaprasad.ds@gmail.com");
+		enterEmailAddressLocator.sendKeys("sms@justdial.com");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		waiting.waitForVisibilityOfElement(enterMobileNumberLocator, 6);
 		enterMobileNumberLocator.clear();
@@ -274,7 +278,7 @@ public class ItineraryPageObjects extends PageInitializer {
 		
 		waiting.waitForVisibilityOfElement(enterDateOfBirthLocator, 6);
 		enterDateOfBirthLocator.clear();
-		enterDateOfBirthLocator.sendKeys("01 / 11 / 1989");
+		enterDateOfBirthLocator.sendKeys("04 / 12 / 2015");
 		
 		return this;
 	}
@@ -284,6 +288,14 @@ public class ItineraryPageObjects extends PageInitializer {
 		jse.executeScript("arguments[0].click()", continueToPaymentLocator);
 		//continueToPaymentLocator.click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return this;
+	}
+	
+	public ItineraryPageObjects verifyPaymentPageTitle(String productName) throws InterruptedException {
+		Thread.sleep(3000);
+		paymentPageHeaderLocator.getText();
+		Assert.assertEquals(paymentPageHeaderLocator.getText(), "Pay to complete your booking");
+
 		return this;
 	}
 	

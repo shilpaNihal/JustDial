@@ -71,7 +71,11 @@ public class MainOperations extends MainClassWebDriver {
 		}
 
 
+		public String getTitle() {
+			log.info("Get page title");
+			return getDriver().getTitle();
 
+		}
 	
 
 }
